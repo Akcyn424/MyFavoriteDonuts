@@ -1,0 +1,162 @@
+
+body{
+    margin: 0;
+    padding: 0;
+
+    /*フォント設定*/
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header, main, footer, nav, footer{display: block;}
+
+a{text-decoration: none;}
+
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+
+/*ヘッダー-------------------------------------*/
+header{
+    background-color:rgba(243, 243, 209, 0.847);
+    color: rgb(205, 0, 102);
+
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 6em 0 4em;
+
+}
+
+header h1,h2{
+    margin: 10px 0;
+}
+
+header nav {
+    background: rgba(208, 255, 0, 0.446);
+	padding: 10px 0; 
+	width: 100%;
+	position: absolute;
+	top:0;
+}
+
+header nav ul{
+    margin: auto;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+header nav ul li a{
+    color: #e50000;
+    padding: 0 1em;
+}
+
+header nav ul li a:hover{
+    /*アニメーションが完了するまでの時間*/
+	transition-duration: 0.3s;
+
+    text-decoration: underline #203aad;
+
+    color:#203aad;
+
+    /*不透明度*/
+    opacity:0.5;
+}
+
+/*メインエリア-------------------------------------*/
+.background{
+    background-image: url(../img/oshi-border1-p8-1280x720.png);
+    background-repeat: no-repeat;
+
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+    
+}
+
+main{
+	width: 100%;
+	max-width: 930px;
+	margin: 0 auto;
+	padding: 24px 0;
+    height: auto;
+
+    /*横並びの設定*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background-color: #f4f5bd;
+    
+}
+
+.donuts{
+    text-align: center;
+}
+
+
+.donuts a img{
+    width: 450px;
+    height: 450px;
+    
+    /*上に移動するための準備　今の場所を基準にする*/
+    position:relative;
+	top:0;
+
+    border:solid 2px #ccc;
+    
+}
+
+.donuts a{
+    text-align: center;
+ 
+}
+
+.donuts p{
+    color:rgb(205, 0, 102);
+}
+
+.over{
+    /*要素が外に出た時の設定　hidden隠す*/
+    /*overflow: hidden;*/
+    
+}
+
+
+/*:hover マウスのカーソルが触れたとき*/
+.donuts a img:hover{
+    /*アニメーションが完了するまでの時間*/
+	transition-duration: 0.3s;
+
+    /*不透明度*/
+    /*opacity:0.5;*/
+    
+    /*拡大する*/
+    /*transform:scale(1.3);*/
+
+    /*上に移動する*/
+    top:-15px;
+
+    border:solid 2px rgb(205, 0, 102);
+
+}
+
+/*フッター-------------------------------------*/
+footer{
+    float:none;
+    text-align: center;  
+    padding: 20px 0;
+    background-color:rgba(243, 243, 209, 0.847);
+}
