@@ -70,7 +70,7 @@ header nav ul li a:hover{
     color:#203aad;
 
     /*不透明度*/
-    /*opacity:0.5;*/
+    opacity:0.5;
 }
 
 /*メインエリア-------------------------------------*/
@@ -93,104 +93,16 @@ main{
 	padding: 24px 0;
     height: auto;
 
-    /*横並びの設定*/
-    display: flex;
-    flex-wrap:nowrap;
-
-
+    
     background-color: #f4f5bd;
-
-    /*color:rgb(205, 0, 102);*/
     
 }
 
-.donutsimg{
-    margin-right: 20px;
-}
-
-.donutsimg img{
-    height: 450px;
-    width: 450px;
-}
-
-.text{
-    color: rgb(205, 0, 102);
-}
-
-
-.price_table{
-    display: table;
-}
-
-.cell{
-    display: table-cell;
-}
-
-.price{
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.button{
-    display: block;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	width: 120px;
-	padding: 1rem 6rem;
-	font-weight: bold;
-	border: 2px solid rgb(205, 0, 102);
-	color: rgb(205, 0, 102);
-
-	border-radius: 120vh;
-	
-    transition: 0.5s;
-
-    padding: 1rem 6rem;
-    margin-top: 50px;
-}
-
-.button:hover{
-    color: #fff;
-	background: rgb(205, 0, 102);
-}
 
 /*フッター-------------------------------------*/
 footer{
-    float: none;
+    float:none;
     text-align: center;  
     padding: 20px 0;
     background-color:rgba(243, 243, 209, 0.847);
-}
-
-
-/* 480px以下に適用されるCSS（スマホ用） */
-@media screen and (max-width: 750px) {
-
-    header{
-        margin: 0;
-        padding: 15px 0;
-    }
-
-    .donutsimg img{
-        
-        width: 80%;
-        height: auto;
-
-        margin: 0 10%;
-    }
-
-    main{
-        display: flex;
-        flex-direction:column;
-        text-align: center;
-    }
-
-    .price_table{
-        margin: auto;
-    }
-
-    .button{
-        margin: auto;
-    }
 }
