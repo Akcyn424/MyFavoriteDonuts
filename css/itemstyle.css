@@ -83,6 +83,10 @@ header nav ul li a:hover{
 
     /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
     background-size: cover;
+
+    height: 100%;
+    min-height:300px;
+    max-height: 1500px;
     
 }
 
@@ -104,11 +108,11 @@ main{
     
 }
 
-.donutsimg{
-    margin-right: 20px;
-}
 
-.donutsimg img{
+
+.donutsimg {
+    margin-right: 20px;
+
     height: 450px;
     width: 450px;
 }
@@ -172,18 +176,25 @@ footer{
         padding: 15px 0;
     }
 
-    .donutsimg img{
-        
-        width: 80%;
+    .donutsimg{
+        margin: 0;
+        padding: 0;
+
+        width: 100%;
+        max-width: 450px;
         height: auto;
+        max-height: 450px;
 
         margin: 0 10%;
+
     }
+
 
     main{
         display: flex;
         flex-direction:column;
         text-align: center;
+        height: 100%;
     }
 
     .price_table{
@@ -191,6 +202,7 @@ footer{
     }
 
     .button{
-        margin: auto;
+        margin: 0 15%;
+        padding: auto;
     }
 }
