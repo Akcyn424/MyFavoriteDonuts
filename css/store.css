@@ -135,8 +135,11 @@ main{
 }
 
 
+.shop_button{
+    text-align: center;
+}
 .button{
-    display: block;
+    display:inline-block;
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
